@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CustomRegex } from 'src/app/material/validation';
+import { SnackbarService } from '../snackbar.service';
 
 
 
@@ -11,7 +12,7 @@ import { CustomRegex } from 'src/app/material/validation';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _snackbar: SnackbarService) { }
 
 
 
@@ -32,6 +33,7 @@ export class ContactComponent implements OnInit {
       this.postform.valid) {
       console.log(this.postform.value)
       this.postform.reset()
+      this._snackbar.openSnackbar('Email send succesfull!!')
     }
 
   }
