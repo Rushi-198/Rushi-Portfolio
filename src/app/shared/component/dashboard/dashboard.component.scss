@@ -1,0 +1,64 @@
+
+.section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 50px;
+    // position: fixed;
+    // top:0;
+    // left: 0;
+    height: calc(100vh - 64px);
+    width: 100%;
+    background-size: cover;
+   
+  background-image: url(../../../../assets/images/1494635-1080-1920-hd-wallpaper-1920x1080-pc.jpg);
+
+    
+}
+
+span{
+    color:white;
+   
+}
+
+h1{
+    font-size: 65px;
+    font-weight:500;
+    
+   text-shadow: 5px 10px 20px rgba(#000,.5);
+
+}
+
+h3{
+    font-size: 35px;
+    font-weight:400; 
+    color:yellow;
+    text-shadow: 5px 10px 20px rgba(#000,.4);
+}
+
+h4{
+    font-size: 25px;
+    font-weight:400; 
+    color: black; text-shadow: 5px 10px 20px rgba(#000,.3);
+}
+
+
+button:hover{
+   transform: scale(1.1);
+   text-shadow: 5px 10px 20px rgba(#000,.5);
+  
+}
+
+button{
+    animation: animation 1.4s ease-in-out;
+}
+
+@keyframes animation {
+    0% {
+     transform: scale(0);
+    }
+    100%{ 
+        transform: scale(1);
+    }
+}

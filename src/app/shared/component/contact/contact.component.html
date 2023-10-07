@@ -1,0 +1,74 @@
+<div class="container">
+    <h1 class="text-center mt-5 head">FEEL FREE TO CONTACT ME</h1>
+    <br>
+    <p class="text-center head-1">
+        I am excited to hear from you! Whether you have a question, a suggestion, or just want to say hello, I'm here to
+        listen.
+        Feel free to drop us a line using the contact form below. I will get back to you as soon as possible
+    </p>
+    <br><br>
+    <div class="row mt-4">
+        <div class="col-8 offset-2">
+            <div class="card">
+                <div class="card-body">
+                    <form [formGroup]="postform" (ngSubmit)="Onpostformsubmit()">
+                        <div class="row ">
+                            <div class="col-6">
+                                <!-- <div class="form-group">
+      
+                                <label for="Email">Email</label>
+                                <input type="text" class="form-control" placeholder="email">
+                            </div> -->
+
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>name</mat-label>
+                                    <mat-error>This field is Mandatory</mat-error>
+                                    <input matInput placeholder="name" formControlName="name">
+                                    <mat-icon
+                                        matSuffix>{{postform.controls['name'].valid?'sentiment_very_satisfied':'sentiment_very_dissatisfied'}}</mat-icon>
+                                    <mat-hint></mat-hint>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-6">
+                                <!-- <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" placeholder="name">
+                            </div> -->
+
+
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>email</mat-label>
+                                    <mat-error>Please Enter Valid Email Address </mat-error>
+                                    <input matInput placeholder="email" formControlName="email">
+                                    <mat-icon matSuffix>alternate_email</mat-icon>
+                                    <mat-hint></mat-hint>
+                                </mat-form-field>
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-12">
+
+                                <!-- <label for="Message"></label>
+                                    <textarea name="" id="" cols="30" rows="10" class="form-control"
+                                        formControlName="Message" placeholder="Message"></textarea> -->
+
+                                <mat-form-field appearance="outline" class="w-100 ">
+                                    <mat-label> Message</mat-label>
+                                    <mat-error>This field is Mandatory</mat-error>
+
+                                    <textarea matInput name="" id="" cols="30" rows="7" formControlName="Message"
+                                        placeholder=" Enter your Message"></textarea>
+                                    <mat-icon matSuffix></mat-icon>
+                                    <mat-hint></mat-hint>
+                                </mat-form-field>
+
+                                <button class="btn btn-success float-right">Send Mail</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
