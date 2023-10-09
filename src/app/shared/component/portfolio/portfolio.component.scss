@@ -3,7 +3,6 @@
 .head{
     font-size: 35px;
     font-weight:400; 
-    
     text-shadow: 10px 10px 20px rgba(#000,.4);
 }
 
@@ -94,3 +93,57 @@ h3{
 
 }
 
+///////////////////////////////////////
+
+
+@media screen and (max-width:767px){
+
+  h3{
+    font-size: 25px !important;
+    font-weight: 500;
+    text-shadow: 15px 10px 20px rgba(#000,.5);
+  
+  }
+
+  hr{
+    width: 100% !important;
+  }
+
+
+  
+.head{
+  font-size: 25px !important;
+  font-weight:400; 
+  text-shadow: 10px 10px 20px rgba(#000,.4);
+}
+
+
+}
+
+
+////////////////////////////////////
+
+@media screen and (max-width: 768px) and (max-width: 1023px){
+
+  h3{
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 15px 10px 20px rgba(#000,.5);
+  
+  }
+
+  hr{
+    width: 100% !important;
+  }
+
+
+  
+.head{
+  font-size: 35px ;
+  font-weight:400; 
+  text-shadow: 10px 10px 20px rgba(#000,.4);
+}
+
+
+};
+  

@@ -28,7 +28,7 @@ export class AboutComponent implements OnInit {
     // autoplaySpeed: 500,
     responsive: {
       0: {         //mb
-        items: 2
+        items: 3
       },
       400: {
         items: 4          // tab

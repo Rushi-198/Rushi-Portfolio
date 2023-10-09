@@ -23,8 +23,51 @@ a:hover,a:focus,a:active{
     
 // }
 
+mat-drawer{
+  background-color: rgba($color: #3f51b5, $alpha: 0.9) !important;
+  width: 40%;
+}
 
 .ac{
   
   background-color:chocolate !important;
+
+}
+
+
+
+///////////////////////////////////////////////////
+/// 
+
+
+@media screen and (max-width:767px){
+    
+  .mat-drawer-container{
+  
+    height:calc(100vh - 57px);
+ }
+
+ .ac{
+  
+  background-color:chocolate !important;
+  
+}
+
+}
+
+//////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) and (max-width: 1023px){
+ 
+  mat-drawer{
+    background-color: rgba($color: #3f51b5, $alpha: 0.9) !important;
+    width: 30%;
+  }
+  
+  .ac{
+  
+    background-color:chocolate !important;
+    
+  }
+
 }

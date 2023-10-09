@@ -33,3 +33,37 @@
 }
 
 
+///////////////////////////////////
+
+@media screen and (max-width:767px){
+
+
+    .pri-heading {
+        color: black;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    hr{
+        width: 100% !important;
+    }
+
+}
+
+
+/////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) and (max-width: 1023px){
+
+    .pri-heading {
+        color: black;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    hr{
+        width: 100% !important;
+    }
+
+
+}

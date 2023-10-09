@@ -63,3 +63,44 @@ button{
         transform: scale(1);
     }
 }
+
+
+////////////////////////////////////////////////////////
+
+@media screen and (max-width:767px){
+    
+
+    .section{
+        height: calc(100vh - 57px);
+    }
+
+    h1{
+        font-size: 40px;
+        font-weight:500; 
+       text-shadow: 5px 10px 20px rgba(#000,.5);
+    }
+    
+h3{
+    font-size: 30px;
+    font-weight:400; 
+    color:yellow;
+    text-shadow: 5px 10px 20px rgba(#000,.4);
+}
+
+h4{
+    font-size: 25px;
+    font-weight:400; 
+    color:aqua; 
+    text-shadow: 5px 10px 20px rgba(#000,.3);
+}
+
+
+button:hover{
+   transform: scale(1.1);
+   text-shadow: 5px 10px 20px rgba(#000,.5);
+  
+}
+
+
+
+}

@@ -89,7 +89,7 @@
                     Portfolio
                 </span>
             </a>
-            <a mat-list-item (click)="sidenav.toggle()" routerLinkActive="ac" routerLinkActive="ac"
+            <a mat-list-item (click)="sidenav.toggle()" routerLinkActive="ac" [routerLinkActiveOptions]="{exact: true}"
                 routerLink="/contact">
                 <mat-icon mat-list-icon>
                     event_available

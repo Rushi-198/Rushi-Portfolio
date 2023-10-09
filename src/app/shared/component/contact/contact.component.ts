@@ -34,6 +34,7 @@ export class ContactComponent implements OnInit {
       console.log(this.postform.value)
       this.postform.reset()
       this._snackbar.openSnackbar('Email send succesfull!!')
+
     }
 
   }
