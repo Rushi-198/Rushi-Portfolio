@@ -1,5 +1,5 @@
-a:hover,a:focus,a:active{
-  background-color:chocolate !important;
+.nav a:hover,.nav a:focus,.nav a:active{
+  background-color:chocolate ;
   color: white !important;
   text-decoration: none;
 
@@ -12,29 +12,33 @@ a:hover,a:focus,a:active{
   cursor: pointer;
 }
 
-.mat-drawer-container{
-   //background-color: #B4B4B3;
+mat-sidenav-content{
    background-color:burlywood ;
-   height: 100vh;
-   height:calc(100vh - 64px);
+  
 }
 
-// mat-drawer-content{
-//   width: 100%;
-    
-// }
 
-mat-drawer{
+
+mat-sidenav{
   background-color: rgba($color: #3f51b5, $alpha: 0.9) !important;
-  width: 40%;
+  width: 30%;
   color: white;
- 
+  position: fixed;
+  
 }
 
 .ac{
-  
+
   background-color:chocolate !important;
-  margin: 9px;
+}
+
+.ac2{
+  background-color:chocolate !important;
+}
+
+
+.nav a{
+  margin: 5px;
 }
 
 .mat-icon{
@@ -47,20 +51,25 @@ span{
 }
 
 ///////////////////////////////////////////////////
-/// 
+
+
+ .mat-list-base {
+padding-top: 0 !important;
+
+}
 
 
 @media screen and (max-width:767px){
     
-  .mat-drawer-container{
-  
-    height:calc(100vh - 57px);
- }
+  mat-sidenav{
+  top: 56px !important;
+
+  }
 
  .ac{
   
   background-color:chocolate !important;
-  margin: 9px;
+  
 }
 
 }
@@ -69,17 +78,18 @@ span{
 
 @media screen and (max-width: 768px) and (max-width: 1023px){
  
-  mat-drawer{
+  mat-sidenav{
     background-color: rgba($color: #3f51b5, $alpha: 0.9) !important;
-    width: 30%;
+    
    color: white;
-
+   top:64px ;
   }
   
   .ac{
   
     background-color:chocolate !important;
-    margin: 9px;
+   
+
   }
 
 }
