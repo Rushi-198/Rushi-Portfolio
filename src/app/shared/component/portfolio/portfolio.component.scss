@@ -35,7 +35,8 @@ span{
     .imgc{
       width: 100% !important;
       height: 200px !important;
-      z-index: 10;
+     z-index: 10;
+      object-fit: cover;
      
     }
     .card-body {

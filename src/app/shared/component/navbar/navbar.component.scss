@@ -13,7 +13,8 @@ a:hover,a:focus,a:active{
 }
 
 .mat-drawer-container{
-   background-color: #B4B4B3;
+   //background-color: #B4B4B3;
+   background-color:burlywood ;
    height: 100vh;
    height:calc(100vh - 64px);
 }
@@ -26,15 +27,24 @@ a:hover,a:focus,a:active{
 mat-drawer{
   background-color: rgba($color: #3f51b5, $alpha: 0.9) !important;
   width: 40%;
+  color: white;
+ 
 }
 
 .ac{
   
   background-color:chocolate !important;
-
+  margin: 9px;
 }
 
+.mat-icon{
+  color: white;
+ }
 
+span{
+  color: white;
+
+}
 
 ///////////////////////////////////////////////////
 /// 
@@ -50,7 +60,7 @@ mat-drawer{
  .ac{
   
   background-color:chocolate !important;
-  
+  margin: 9px;
 }
 
 }
@@ -62,12 +72,14 @@ mat-drawer{
   mat-drawer{
     background-color: rgba($color: #3f51b5, $alpha: 0.9) !important;
     width: 30%;
+   color: white;
+
   }
   
   .ac{
   
     background-color:chocolate !important;
-    
+    margin: 9px;
   }
 
 }
